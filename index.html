@@ -60,15 +60,15 @@
             font-weight: bold;
             text-decoration: none;
             color: white;
-            background: #444;
+            background: #007BFF;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             cursor: pointer;
             transition: background 0.3s;
         }
 
         .button:hover {
-            background: #666;
+            background: #0056b3;
         }
 
         .button img {
@@ -77,14 +77,13 @@
         }
 
         .image-container {
-            border: 8px solid rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            border: 5px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
         }
 
         .image-container img {
-            width: 500px;
+            width: 600px;
             height: auto;
             display: block;
         }
@@ -111,18 +110,18 @@
         const createStar = () => {
             const star = document.createElement('div');
             star.classList.add('star');
-            star.style.top = `${Math.random() * 100}vh`;
+            star.style.top = `${Math.random() * 30}vh`;
             star.style.left = `${Math.random() * 100}vw`;
-            star.style.animationDuration = `${5 + Math.random() * 10}s`;
-            star.style.animationDelay = `${Math.random() * 5}s`;
+            star.style.animationDuration = `${5 + Math.random() * 15}s`;
+            star.style.animationDelay = `${Math.random() * 3}s`;
             document.body.appendChild(star);
 
             setTimeout(() => {
                 star.remove();
-            }, 15000);
+            }, 20000);
         };
 
-        setInterval(createStar, 500);
+        setInterval(createStar, 300);
     </script>
 </body>
 </html>
