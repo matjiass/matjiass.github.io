@@ -21,8 +21,21 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-            background-size: 3px 3px;
+            background: transparent;
+            z-index: -1;
+            animation: moveStars 20s linear infinite;
+        }
+        @keyframes moveStars {
+            from {
+                background: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px), black;
+                background-size: 3px 3px;
+                background-position: 0 0;
+            }
+            to {
+                background: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px), black;
+                background-size: 3px 3px;
+                background-position: -1000px -1000px;
+            }
         }
         .container {
             display: flex;
@@ -66,7 +79,7 @@
             border-radius: 10px;
         }
         .image-container img {
-            width: 200px;
+            width: 300px;
             height: auto;
             display: block;
         }
@@ -85,7 +98,7 @@
             </a>
         </div>
         <div class="image-container">
-            <img src="https://i.imgur.com/uzC4yaU.png">
+            <img src="https://i.imgur.com/uzC4yaU.png" alt="New Image">
         </div>
     </div>
 </body>
