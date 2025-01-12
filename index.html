@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Link Selector</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://www.toptal.com/designers/subtlepatterns/patterns/stardust.png') repeat;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .button-container {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: #444;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #666;
+        }
+        .button img {
+            height: 30px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Ad Link</h1>
+        <div class="button-container">
+            <a href="https://creators.lootlabs.gg" class="button">
+                Lootlabs
+                <img src="https://creators.lootlabs.gg/assets/svg/logo.svg" alt="Lootlabs Logo">
+            </a>
+            <a href="https://linkvertise.com" class="button">
+                Linkvertise
+                <img src="https://www.stepstone.de/upload_de/logo/E/logoLinkvertise-Inh-Marc-Winter-255864DE-2101131647.gif" alt="Linkvertise Logo">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
