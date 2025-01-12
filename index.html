@@ -14,15 +14,16 @@
         }
         .container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            gap: 50px;
         }
         .button-container {
             display: flex;
-            gap: 50px;
-            align-items: center;
+            flex-direction: column;
+            gap: 20px;
         }
         .button {
             display: flex;
@@ -47,11 +48,20 @@
             height: 30px;
             margin-left: 15px;
         }
+        .image-container {
+            border: 5px solid white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Choose Your Ad Link</h1>
         <div class="button-container">
             <a href="https://creators.lootlabs.gg" class="button">
                 Lootlabs
@@ -61,6 +71,9 @@
                 Linkvertise
                 <img src="https://www.stepstone.de/upload_de/logo/E/logoLinkvertise-Inh-Marc-Winter-255864DE-2101131647.gif" alt="Linkvertise Logo">
             </a>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/200" alt="Placeholder Image">
         </div>
     </div>
 </body>
