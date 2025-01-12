@@ -48,6 +48,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            z-index: 10;
         }
 
         .button {
@@ -60,7 +61,7 @@
             font-weight: bold;
             text-decoration: none;
             color: white;
-            background: #007BFF;
+            background: #2b2d42;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -68,7 +69,7 @@
         }
 
         .button:hover {
-            background: #0056b3;
+            background: #8d99ae;
         }
 
         .button img {
@@ -78,8 +79,10 @@
 
         .image-container {
             border: 5px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
             border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+            z-index: 10;
         }
 
         .image-container img {
@@ -110,7 +113,7 @@
         const createStar = () => {
             const star = document.createElement('div');
             star.classList.add('star');
-            star.style.top = `${Math.random() * 30}vh`;
+            star.style.top = `${Math.random() * 20}vh`;
             star.style.left = `${Math.random() * 100}vw`;
             star.style.animationDuration = `${5 + Math.random() * 15}s`;
             star.style.animationDelay = `${Math.random() * 3}s`;
@@ -121,7 +124,7 @@
             }, 20000);
         };
 
-        setInterval(createStar, 300);
+        setInterval(createStar, 200);
     </script>
 </body>
 </html>
